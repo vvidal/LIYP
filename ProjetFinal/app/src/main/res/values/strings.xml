@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LIYP</string>
+    <string name="BouttonRecherche">Rechercher</string>
+    <string name="Recherche">Recherche</string>
+    <string name="Recherche2">Recherche…</string>
+    <string name="BouttonFavoris">Favoris</string>
+    <string name="BouttonSejour">Mon séjour</string>
+    <string name="BouttonBonsPlans">Bons plans</string>
+    <string name="SeConnecter">Se Connecter</string>
+    <string name="app_id">1720208684914992</string>
+</resources>

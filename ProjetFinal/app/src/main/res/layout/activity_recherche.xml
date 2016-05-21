@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.cyatophilum.projetmenu.Button1Activity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/retour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_retour"
+            android:background="#CC0000"
+            android:clickable="true" />
+
+        <TextView
+            android:text="@string/Recherche"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:background="#CC0000"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:paddingTop="1dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:id="@+id/t" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/black"/>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <EditText
+            android:id="@+id/choixx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/Recherche2"
+            android:textSize="30sp"
+            android:layout_weight="0.92"
+            android:singleLine="true" />
+        <ImageButton
+            android:id="@+id/recherchons"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/loupe_recherche"
+            android:background="#CC0000"
+            android:layout_weight="0.04"
+            android:clickable="true" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/black"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content">
+        </Spinner>
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+        </Spinner>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choixxx"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true">
+
+    </ListView>
+</LinearLayout>

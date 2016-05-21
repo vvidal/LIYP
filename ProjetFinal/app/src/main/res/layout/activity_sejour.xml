@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:text="Mon séjour"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:background="#CC0000"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:paddingTop="1dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:id="@+id/t" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#CC0000"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/ic_sharewithfacebook"
+            android:background="@drawable/ic_retour"
+            android:layout_width="100dp"
+            android:layout_height="70dp" />
+
+        <ImageButton
+            android:id="@+id/ic_geoloc"
+            android:background="@drawable/ic_room_white_24dp"
+            android:layout_width="100dp"
+            android:layout_height="70dp" />
+        <ImageButton
+            android:id="@+id/ic_generer"
+            android:background="@drawable/ic_visibility_white_48dp"
+            android:layout_width="100dp"
+            android:layout_height="70dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_favoris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choixxx"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true">
+
+    </ListView>
+
+</LinearLayout>
